@@ -1,0 +1,1 @@
+export const peugeot_api_url = 'http://api.peugeot.vn/api';

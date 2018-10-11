@@ -1,0 +1,476 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+@font-face{
+  font-family:Flaticon;    
+  src:url(../font/Flaticon.woff) format("woff");
+  font-weight:400;
+  font-style:normal;  
+}
+@font-face{
+  font-family:FontAwesome;    
+  src:url(../font/fontawesome-webfont.woff2) format("woff2");  
+}
+body {    
+  color: #5a5a5a;
+}
+header{  
+  background-image: url('../img/bg_slide.jpg');
+  padding-bottom: 2rem;
+}
+.top-bar{
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+}
+.top-bar a{
+  color: white;
+  margin-right: 5px;
+}
+.navbar-nav .nav-link { 
+  text-transform: uppercase;
+  font-weight: 440;
+  font-size: 1.2rem
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255);
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+  color:#D81517;
+  font-weight: 600;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 27.9rem;    
+}
+/* .carousel-item img {
+  width: 825px;
+} */
+.carousel-item img {    
+  width: 50em;
+  height: auto;
+}
+.carousel-frm {
+  justify-content:center
+}
+.form-inline.carousel-frm .form-control, .form-inline.carousel-frm .btn{
+  border-radius: 0 !important;
+  width: 100%;
+}
+.form-inline.carousel-frm .row{
+  background: #fff;
+  margin: 0 !important;
+  width: 100%;
+}
+.btn-search {
+  color: #fff !important;
+  background-color: #d81517;
+  border-color: #d81517;
+}
+.cl-frm-search:parent {
+  padding: 0 !important;
+}
+.cl-frm-search{
+  height: 3em;
+  line-height: 2em;
+}
+.form-inline.carousel-frm .row .form-group.col-md-3:first-child{
+  padding: 0;
+}
+@media (min-width: 576px){
+  .form-inline.carousel-frm .row .form-group.col-md-3:last-child{
+    padding: 0;
+  }
+}
+/*Sldie Feature Car*/
+
+/* Dez New Work */
+.no-of-item h2{
+	font-size:115px;
+	color:#000;
+	opacity:0.2;
+	font-family:"Montserrat",sans-serif;
+	font-weight: bold;
+	line-height:115px;
+	margin:0;
+}
+.no-of-item h3{
+	font-size:28px;
+	color:#000;
+  font-weight: 420;
+  text-transform: uppercase;
+}
+
+.new-item .owl-item .dlab-info{
+	background-color:rgba(255,255,255,0.85);
+	padding:16px 20px;
+	transition: all 0.5s ease 0s;
+}
+.new-item .owl-item:nth-child(2n+1) .dlab-info{
+	background-color:rgba(255,255,255,0.95);
+	transition: all 0.5s ease 0s;
+}
+.dlab-new-item .dlab-info p{
+	margin:0;
+	color:#636363;
+}
+.dlab-new-item .dlab-info .dlab-title a{
+	color:#000;
+}
+.dlab-new-item .dlab-info .dlab-title{
+	font-weight: 600;
+    text-transform: uppercase;
+	margin: 10px 0 0;
+}
+.new-item .owl-nav {
+    bottom: 35px;
+    height: 40px;
+    left: -130px;
+    margin-top: 20px;
+    position: absolute;
+    text-align: center;
+    transform-origin: calc(-50%) 50% 0;
+    width: 100px;
+}
+.new-item .dlab-new-item:hover .dlab-info{
+	background-color: #D81517;
+}
+.new-item .dlab-new-item:hover .dlab-info p,
+.new-item .dlab-new-item:hover .dlab-info .dlab-title a{
+	color:#fff;
+  transition: all 0s ease 0s;
+  text-decoration: none;
+}
+.dlab-new-work:after{
+	width: 25%;
+}
+.p-a0 {
+  padding: 0;
+}
+.no-of-item{
+	padding: 30px;
+}
+.no-of-item-dtl{
+	text-align: center;
+}
+.owl-btn-style-2 .owl-nav .owl-prev,
+.owl-btn-style-1 .owl-nav .owl-prev,
+.owl-btn-style-2 .owl-nav .owl-next,
+.owl-btn-style-1 .owl-nav .owl-next{
+	width:40px;
+	height:40px;
+	border:0;
+	background-color:#373f44;
+	line-height:40px;
+	padding:0;
+	font-size: 18px;
+}
+.owl-btn-style-2 .owl-nav .owl-prev,
+.owl-btn-style-2 .owl-nav .owl-next{
+	background-color:#e9e9e9;
+	color:#000;
+}
+.owl-btn-style-2 .owl-nav{
+	margin-top: 0;
+    position: absolute;
+    right: 11px;
+    text-align: center;
+    top: -85px;
+}
+.owl-carousel.owl-btn-style-1 .owl-nav,
+.owl-carousel.owl-btn-style-2 .owl-nav{
+	display:block;
+}
+.btn, .button-skew i:before, .button-skew span, .owl-next, .owl-prev, .site-button-link {
+  display: inline-block;
+}
+.owl-next, .owl-prev {
+  background-color: rgba(0,0,0,.5);
+  border-color: rgba(0,0,0,.5);
+  color: #fff;
+  padding: 5px 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  border-width: 0;
+  border-style: solid;
+}
+@media only screen and (max-width: 1024px) {
+	.no-of-item h3{
+		 font-size: 20px;
+	}
+	.no-of-item h2{
+		 font-size: 75px;
+		 line-height: 75px;
+	}	
+}
+
+@media only screen and (max-width: 767px) {
+	.dlab-new-work:after {
+		height: 50%;
+		width: 100%;
+	}
+	.no-of-item-dtl{
+		text-align:center;
+	}
+	.new-item .owl-nav{
+		bottom:auto;
+		left:50%;
+		top: -80px;
+		margin-left: -50px;
+	}
+	.no-of-item {
+		padding: 30px 30px 60px 30px ;
+	}	
+}
+/*End Sldie Feature Car*/
+
+/*Footer*/
+.footer-top {
+  background-color: #191F23;
+  padding: 50px 0 20px;
+}
+.footer-bottom {
+  background-color: #14191C;
+  padding: 25px 0;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+.logo-footer {
+  max-width: 100%;
+  height: 60px;
+  margin: 15px 0;
+  display: table;
+  vertical-align: middle;
+  padding: 0;
+}
+.m-b15 {
+  margin-bottom: 15px;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.dlab-separator {
+  display: inline-block;
+  height: 2px;
+  width: 80px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #D81517;
+}
+footer h4 {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  font-weight: 400;
+}
+.dlab-subscribe-form .form-control {
+  background-color: #1e252a;
+  border: 0;
+  color: #86949c;
+  padding-left: 15px;
+}
+.site-button{
+  background-color: #D81517;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  outline: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  line-height: 1.42857;
+  font-weight: 400;
+}
+footer .widget_services ul li{
+  border-bottom: 1px dashed rgba(102,102,102,.3);
+  position: relative;
+  padding: 10px 10px 10px 15px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+footer .widget_services ul li a, footer a, footer{
+  color: #b0b0b0;
+}
+.recent-posts-entry .widget-post-bx:last-child {
+  border-bottom: none;
+}
+.recent-posts-entry .widget-post {
+  margin-bottom: 10px;
+}
+.widget-post .dlab-post-info, .widget-post .dlab-post-media {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+.recent-posts-entry .dlab-post-info {
+  background: 0 0;
+  padding: 0 0 0 15px;
+  border: none;
+}
+.dlab-media img, .dlab-post-media img {
+  width: 100%;
+  height: auto;
+}
+footer h5{
+  font-size: 16px;
+  font-weight: 300;  
+} 
+footer h5 a{
+  color: #D81517;
+}
+.dlab-post-meta, .dlab-post-title {
+  margin-bottom: 10px;
+}
+.dlab-post-meta ul li {
+  padding: 0;
+  display: inline-block;
+}
+footer .widget ul {
+  list-style: none;
+  margin-top: 5px;
+}
+.dlab-post-meta li:last-child:after {
+  display: none;
+}
+.dlab-post-meta li:after {
+  content: "/";
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 5px;
+  opacity: .5;
+}
+.recent-posts-entry ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.dlab-contact-info li {
+  position: relative;
+  padding: 0 0px 10px 40px;
+}
+.dlab-contact-info li i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #c9c9c9;
+  font-size: 25px;
+}
+.flaticon-placeholder:before {
+  content: "\f139";
+}
+.flaticon-customer-service:before {
+  content: "\f13b";
+}
+[class*=" flaticon-"]:after, [class*=" flaticon-"]:before, [class^=flaticon-]:after, [class^=flaticon-]:before {
+  font-family: Flaticon;
+  font-style: normal;
+}
+footer ul {
+  padding: 0;
+}
+.full-social-icon {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  list-style: none;
+}
+.m-b30 {
+  margin-bottom: 30px;
+  float: left;
+}
+.full-social-icon li a {
+  background-color: #1e252a;
+  display: block;
+  color: #e9e9e9;
+  min-height: 55px;
+  padding: 16px 15px 16px 75px;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+.full-social-icon li a i {
+  background-color: rgba(255,255,255,0.05);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 55px;
+  color: #fff;
+  font-size: 26px;
+  line-height: 55px;
+  font-weight: 100;
+}
+.full-social-icon li a:hover{
+	color:#fff;
+}
+.full-social-icon li.fb:hover a{
+	background-color:#4867AA;
+}
+.full-social-icon li.tw:hover a{
+	background-color:#1DA1F2;
+}
+.full-social-icon li.gplus:hover a{
+	background-color:#DC4A38;
+}
+.full-social-icon li.linkd:hover a{
+	background-color:#007AB5;
+}
+.full-social-icon li:hover a i{
+	background-color: rgba(255,255,255,0.2);
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.widget.widget_services ul li::before{
+  content: "\f105";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  display: block;
+  font-family: FontAwesome;
+}
+/*End Footer*/
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 768px){
+  #myCarousel{
+    display: none;
+  }
+}
+@media (min-width: 40em) {
+   .featurette-heading {
+    font-size: 50px;
+  }  
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+  
+}
+
+/*Begin custom css 04-08-2018*/
+.mail-check{
+  margin: 35px auto;
+}
+.title_home{
+  margin-bottom: 50px;
+}
+
+/*Action verifi mail*/
+#panel {    
+    display: none;
+}
