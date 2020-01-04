@@ -7,21 +7,21 @@ class ModulePeugeotSlideshow extends Component {
                 <div className="carousel-inner">
                     <div className="carousel-item active bg-transparent">
                         <div className="container text-center">
-                            <a href="#">
+                            <a href={null}>
                                 <img className="first-slide" src="/img/icon-slide.png" alt="First slide" />
                             </a>
                         </div>
                     </div>
                     <div className="carousel-item bg-transparent">
                         <div className="container text-center">
-                            <a href="#">
+                            <a href={null}>
                                 <img className="first-slide" src="/img/icon-slide.png" alt="First slide" />
                             </a>
                         </div>
                     </div>
                     <div className="carousel-item bg-transparent">
                         <div className="container text-center">
-                            <a href="#">
+                            <a href={null}>
                                 <img className="first-slide" src="/img/icon-slide.png" alt="First slide" />
                             </a>
                         </div>

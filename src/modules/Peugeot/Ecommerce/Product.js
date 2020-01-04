@@ -9,7 +9,7 @@ class ModulePeugeotEcommerceProduct extends Component {
     componentDidMount() {
         var that = this;
         var productIds = window.localStorage.getItem('productIds') || '';
-        if(productIds == '') {
+        if(productIds === '') {
             productIds = ',' + this.props.productId + ',';
         } else {
             if (productIds.indexOf(',' + this.props.productId + ',') === -1) {

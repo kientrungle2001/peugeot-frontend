@@ -104,16 +104,16 @@ class ModulePeugeotFooter extends Component {
                             <div className="clearfix">
                                 <ul className="full-social-icon clearfix">
                                     <li className="fb col-md-3 col-sm-6 col-xs-6 m-b30">
-                                        <a href="#"><i className=""></i> Share On Facebook </a>
+                                        <a href={null}><i className=""></i> Share On Facebook </a>
                                     </li>
                                     <li className="tw col-md-3 col-sm-6 col-xs-6 m-b30">
-                                        <a href="#"><i className=""></i> Tweet About it </a>
+                                        <a href={null}><i className=""></i> Tweet About it </a>
                                     </li>
                                     <li className="gplus col-md-3 col-sm-6 col-xs-6 m-b30">
-                                        <a href="#"><i className=""></i> Google Plus | 78+ </a>
+                                        <a href={null}><i className=""></i> Google Plus | 78+ </a>
                                     </li>
                                     <li className="linkd col-md-3 col-sm-6 col-xs-6 m-b30">
-                                        <a href="#"><i className=""></i> Linkedin | 21k </a>
+                                        <a href={null}><i className=""></i> Linkedin | 21k </a>
                                     </li>
                                 </ul>
                             </div>
@@ -124,7 +124,7 @@ class ModulePeugeotFooter extends Component {
                             <div className="row">
                                 <div className="col-md-6 col-sm-6 text-left"> © Copyright 2018 - VHP Auto</div>
                                 <div className="col-md-6 col-sm-6 text-right ">
-                                    <a href="#"> Giới thiệu</a> | <a href="#"> Liên hệ</a> | <a href="#"> Tuyển dụng</a>
+                                    <a href={null}> Giới thiệu</a> | <a href={null}> Liên hệ</a> | <a href={null}> Tuyển dụng</a>
                                 </div>
                             </div>
                         </div>

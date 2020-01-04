@@ -13,8 +13,8 @@ class ModulePeugeotEcommerceProductCategoryList extends Component {
             that.state = {
                 items: resp.data,
                 chunks: chunk(resp.data, 4),
-                total_items: parseInt(resp.headers['x-total-count']),
-                total_pages: Math.ceil(parseInt(resp.headers['x-total-count']) / 16),
+                total_items: parseInt(resp.headers['x-total-count'], 10),
+                total_pages: Math.ceil(parseInt(resp.headers['x-total-count'], 10) / 16),
                 pages: []
             }
 
@@ -52,7 +52,7 @@ class ModulePeugeotEcommerceProductCategoryList extends Component {
                 <nav aria-label="Page navigation phutungpeugeot.com">
                     <ul className="pagination justify-content-center">
                         <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Previous">
+                            <a className="page-link" href={null} aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
                                 <span className="sr-only">Previous</span>
                             </a>
@@ -69,7 +69,7 @@ class ModulePeugeotEcommerceProductCategoryList extends Component {
                         
                         
                         <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Next">
+                            <a className="page-link" href={null} aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                                 <span className="sr-only">Next</span>
                             </a>

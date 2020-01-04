@@ -6,7 +6,7 @@ class ModulePeugeotSearch extends Component {
             <form className="form-inline carousel-frm container">
                 <div className="row">
                     <div className="form-group col-md-3">
-                        <a href="#" className="btn btn-search cl-frm-search"><img src="/img/icon_search_peugeot.png" alt="search" />PHỤ TÙNG PEUGEOT</a>
+                        <a href={null} className="btn btn-search cl-frm-search"><img src="/img/icon_search_peugeot.png" alt="search" />PHỤ TÙNG PEUGEOT</a>
                     </div>
                     <div className="form-group col-md-3">
                         <input type="text" className="form-control" id="exampleInputEmail3" placeholder="MÃ PHỤ TÙNG" />

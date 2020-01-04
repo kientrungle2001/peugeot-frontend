@@ -19,11 +19,11 @@ class ModulePeugeotEcommerceProductCategoryNavigation extends Component {
                 <h2 className="tit-category"><i className="fas fa-car"></i> Tìm phụ tùng theo xe</h2>
                 <div className="row">
                     <div className="col">
-                        <Link className={"btn button-cate " + (this.props.categoryId==1 ? 'active': '')} to={"/category/product/1/san-pham"}>Tất cả</Link>
+                        <Link className={"btn button-cate " + (this.props.categoryId===1 ? 'active': '')} to={"/category/product/1/san-pham"}>Tất cả</Link>
                         {this.state && this.state.items.map(
                             function(item, key) {
                                 return (
-                                    <Link className={"btn button-cate " + (item.id == this.props.categoryId ? 'active': '') } to={"/category/product/" + item.id + "/" + item.alias} key={key}>{item.title}</Link>
+                                    <Link className={"btn button-cate " + (item.id === this.props.categoryId ? 'active': '') } to={"/category/product/" + item.id + "/" + item.alias} key={key}>{item.title}</Link>
                                 );
                             }.bind(this)
                         )}

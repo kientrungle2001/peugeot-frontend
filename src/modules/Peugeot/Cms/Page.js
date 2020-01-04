@@ -13,7 +13,7 @@ class ModulePeugeotCmsPage extends Component {
     }
     render() {
         return (
-            <div className="page-content" dangerouslySetInnerHTML={{ __html: this.state && this.state.content.replace(/\[\[/g, '<').replace(/\]\]/g, '>') || '' }}></div>
+            <div className="page-content" dangerouslySetInnerHTML={{ __html: (this.state && this.state.content.replace(/\[\[/g, '<').replace(/\]\]/g, '>')) || '' }}></div>
         );
     }
 }
